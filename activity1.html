@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first JS page</title>
+    <script>
+        document.write("demo").innerHTML = "Welcome to my first JavaScript page!";
+        function changeText() {
+            document.getElementById("myParagraph").innerHTML = "You BUM";
+        }
+        function changeText() {
+            document.getElementById("himothy").innerHTML = "You BUM";
+        }
+    </script>
+    <script>
+        console.log("Kobe Bryant is the best player in the world");
+    </script>
+    <script>
+        window.alert(5 + 6);
+    </script>
+</head>
+<body>
+    <h1>JavaScript is cool</h1>
+    <p>Open the console to see more...</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = '<h1>Welcome to my first JavaScript page!</h1>';">Click Me!</button>
+    <div id="demo" style="width: 100px; height: 100px;"></div>
+    <p id="myParagraph">don't click me</p>
+
+    <button type="button" onclick="changeText()" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Click Me!</button>
+    <br>
+    <p id="himothy">click me don't be a bum</p>
+    <button type="button" onclick="changeText()">Click Me!</button>
+</body>
+</html>

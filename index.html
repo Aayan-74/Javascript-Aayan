@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h2>What can Javascript do?</h2>
+    <p id="demo">Javascript can change HTML content.</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">Click Me!</button>
+    <br>
+    <br>
+    <button onclick="document.getElementById('myImage').src='https://cdn.britannica.com/09/188709-050-03BF34CB/Michael-Jordan.jpg'">Right</button>
+
+<img id="myImage" src="https://lalweb.blob.core.windows.net/public/lakers/product-marketing/web/history/kobe/kobe-alumni/kobe71213164.jpg" style="width:400px">
+
+<button onclick="document.getElementById('myImage').src='https://lalweb.blob.core.windows.net/public/lakers/product-marketing/web/history/kobe/kobe-alumni/kobe71213164.jpg'">Left</button>
+<br>
+<br>
+<p id="demoo">JavaScript can change the style of an HTML element.</p>
+
+<button type="button" onclick="document.getElementById('demoo').style.cssText='font-size:10em;color:red;background-color:yellow'">Click Me!</button>
+<br>
+<br>
+<p id="demooo">JavaScript can hide HTML elements.</p>
+<button type="button" onclick="document.getElementById('demooo').style.display='none'">Click Me!</button>
+<br>
+<br>
+<p id="demoooo" style="display:none">Hello JavaScript!</p>
+
+<button type="button" onclick="document.getElementById('demoooo').style.display='block'">Click Me!</button>
+<script>
+    document.getElementById("damo").innerHTML ="My First JavaScript";
+</script>
+<p id="new"></p>
+<br>
+<button type="button" onclick="document.getElementById('new').innerHTML = '<h1>LEBROOOOON</h1>'">Click Me!</button>
+<script>
+    document.getElementById("new").innerHTML ="<h1>LEBROOOOON</h1>";
+</script>
+<br>
+
+<script>
+    document.write(5.76 / 3.2 * 2);
+</script>
+<br>
+<button type="button" onclick="document.write(6 / 3 * 2)">Click Me!</button>
+</body>
+</html>
