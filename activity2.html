@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Activity 2</title>
+<style>
+    .center-content {
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #151515;
+        border-radius: 5px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        background-color: #f9f9f9;
+    }
+    img {
+        width: 300px;
+        height: auto;
+        align-items: center;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+    img:hover {
+        transform: scale(1.05);
+        transition: transform 0.2s;
+    }
+    h1 {
+        color: #333;
+        font-family: 'Arial', sans-serif;
+    }
+    p {
+        font-family: 'Arial', sans-serif;
+        color: #555;
+    }
+    button {
+        background-color: #007BFF;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: orange;
+        transform: scale(1.05);
+        transition: background-color 0.3s, transform 0.3s;
+    }
+</style>
+<script>
+    function changeText() {
+        document.getElementById("myParagraph").innerHTML = "Shai Gilgeous-Alexander is a talented player that has averaged 32.7 points per game, 5.0 rebounds, and 6.4 assists on 51.9% shooting this season! He is a 2-time NBA All-Star and was named to the All-NBA First Team in 2023. He is also a member of the Canadian national team and has represented Canada in international competitions. This season he has been named MVP of this season and is his first MVP award.";
+    }
+    function changeText() {
+        document.getElementById("SGA").innerHTML = "Shai Gilgeous also has his own signature shoe with the brand converse and will be releasing it in the fall of 2025 and is expected to come at a price point of $130 dollars. He has also been featured in commercials for the brand and is expected to be a big part of their marketing campaign moving forward.";
+    }
+    console.log("https://www.reuters.com/resizer/v2/YTE2ORHGVNM4ZDVZFGBSVFHR5A.jpg?auth=2d43810ccb4b6e7b1490fad62fa3976beb40daf2f2ef786a126ad92e9795d5c9&width=4024&quality=80");
+
+    let userResponse = prompt("What topic would you like to research?");
+console.log("User wants to research:", userResponse);
+
+function happyBirthday(username, age){
+    console.log("Happy Birthday to you!");
+    console.log("Happy Birthday to you!");
+    console.log(`Happy Birthday dear ${username}!`);
+    console.log("Happy Birthday to you!");
+    console.log(`You are ${age} years old!`);
+}
+happyBirthday("Shai Gilgeous-Alexander", 24);
+/* 
+    The above code defines a function called happyBirthday that takes two parameters: username and age. 
+    It then logs a birthday song to the console, including the user's name and age.
+    the video I followed was https://www.youtube.com/watch?v=HFaxylC7bUc
+    inside the brackets of happyBirthday("Shai Gilgeous-Alexander", 24); are arguments that are passed to the function when it is called.
+    The function will then use these arguments to fill in the placeholders in the console logs.
+*/
+</script>
+</head>
+<body>
+    <h1>Welcome to the Shai Gilgeous Alexander fanbase!</h1>
+    <p>Click the button to see a fun fact about SGA!</p>
+    <button type="button" onclick="document.getElementById('funFact').innerHTML = 'Shai Gilgeous-Alexander is known for his incredible ball-handling skills and ability to finish at the rim!'">Click Me!</button>
+    <p id="funFact"></p>
+    <section class="center-content">
+<img src="https://www.reuters.com/resizer/v2/YTE2ORHGVNM4ZDVZFGBSVFHR5A.jpg?auth=2d43810ccb4b6e7b1490fad62fa3976beb40daf2f2ef786a126ad92e9795d5c9&width=4024&quality=80" alt="Shai Gilgeous-Alexander">
+<img src="https://andscape.com/wp-content/uploads/2024/12/GettyImages-2188221061-e1733795719971.jpg" alt="Shai Gilgeous-Alexander">
+<img src="https://www.oklahoman.com/gcdn/presto/2021/12/19/NOKL/5b429437-1adc-4fcb-ab67-bbc51a0697b8-_LX10162.jpg" alt="Shai Gilgeous-Alexander">
+    <p>Shai Gilgeous-Alexander is a professional basketball player who plays for the Oklahoma City Thunder in the NBA.</p>
+    <p>He was born on July 12, 1998, in Hamilton, Ontario, Canada.</p>
+    <p>SGA is known for his scoring ability, playmaking skills, and defensive prowess.</p>
+    <p>He has quickly become one of the rising stars in the league.</p>
+    <p>Shai was selected 11th overall in the 2018 NBA Draft by the Charlotte Hornets and was traded to the Los Angeles Clippers.</p>
+    <p>In 2020, he was traded to the Oklahoma City Thunder, where he has continued to develop into a star player.</p>
+    <p>SGA is known for his smooth shooting stroke and ability to create his own shot.</p>
+    <p>He has also shown the ability to be a leader on and off the court.</p>
+    </section>
+    <section class="center-content">
+    <button type="button" onclick="changeText()">Click Me to learn more about Shai Gilgeous-Alexander!</button>
+    <p id="myParagraph"></p>
+    </section>
+    <section class="center-content">
+    <button type="button" onclick="changeText()">Click Me to learn more about Shai Gilgeous-Alexander!</button>
+    <p id="SGA"></p>
+    </section>
+    <section class="center-content">
+        <button type="button" onclick="document.getElementById('green').src='https://nrml.ca/cdn/shop/files/A11994C_E_107X1_07dc6165-1eba-46f5-8aff-24263c89a95e.png?crop=center&height=1000&v=1721653956&width=1800'">Click Me to view the next image!</button>
+        <img id="green" src="https://nrml.ca/cdn/shop/files/A11994C_E_107X1_07dc6165-1eba-46f5-8aff-24263c89a95e.png?crop=center&height=1000&v=1721653956&width=1800" alt="SGA's shoes">
+        <button type="button" onclick="document.getElementById('green').src='https://andscape.com/wp-content/uploads/2025/02/Converse-SHAI-001-3-e1739484907755.jpg'">Click Me to view the next image!</button>
+        <p>Shai Gilgeous-Alexander's shoes are designed for performance and style, making them a popular choice among basketball players and fans alike.</p>
+    </section>
+</body>
+</html>
