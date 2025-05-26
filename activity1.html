@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first JS page</title>
     <script>
-        document.write("demo").innerHTML = "Welcome to my first JavaScript page!";
+        
         function changeText() {
-            document.getElementById("myParagraph").innerHTML = "You BUM";
+            document.getElementById("myParagraph").innerHTML = "You clicked the button!";
         }
-        function changeText() {
-            document.getElementById("himothy").innerHTML = "LET'S GO";
+        function changeTextJD() {
+            document.getElementById("jd").innerHTML = "LEBRON JAMES IS THE GOAT!";
         }
     </script>
     <script>
@@ -19,18 +19,22 @@
     <script>
         window.alert(5 + 6);
     </script>
+    <script>
+        
+    </script>
 </head>
 <body>
     <h1>JavaScript is cool</h1>
     <p>Open the console to see more...</p>
-    <button type="button" onclick="document.getElementById('demo').innerHTML = '<h1>Welcome to my first JavaScript page!</h1>';">Click Me!</button>
-    <div id="demo" style="width: 100px; height: 100px;"></div>
-    <p id="myParagraph">don't click me</p>
+    <button type="button" onclick="document.write('demo').innerHTML = '<h1>Welcome to my first JavaScript page!</h1>';">Click Me!</button>
+    <p id="demo"></p>
 
-    <button type="button" onclick="changeText()" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Click Me!</button>
+<p id="myParagraph">This text will change when you click the button.</p>
+
+    <button onclick="changeText()">Click Me!</button>
     <br>
-    <p id="himothy">click me don't be a bum</p>
-    <button type="button" onclick="changeText()">Click Me!</button>
+    <p id="jd">this text will change once you click the button</p>
+    <button onclick="changeTextJD()">Click Me!</button>
     <br>
     <button onclick="document.getElementById('myImage').src='https://cdn.britannica.com/09/188709-050-03BF34CB/Michael-Jordan.jpg'">Right</button>
 
